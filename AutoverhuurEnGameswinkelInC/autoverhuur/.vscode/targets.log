@@ -6,10 +6,12 @@ mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Feb 09 20:52:30 2022
+# Make data base, printed on Sun Feb 13 13:32:35 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # makefile (from 'Makefile', line 18)
@@ -24,22 +26,22 @@ _MSYS2_BASH = C:\tools\msys64\usr\bin\bash.exe
 EXT = .cpp
 # makefile (from 'Makefile', line 26)
 WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
-# makefile (from 'Makefile', lin 
-e 14)
+# makefile (from 'Makefile', line 14)
 OBJDIR = obj
 # environment
 USERPROFILE = C:\Users\Bart de Vries
 # environment
 LOCALAPPDATA = C:\Users\Bart de Vries\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c41b1e33-294f-46af-9cbe-9b5d81660f69-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2f32e521-2fa7-4caf-b862-46d55037f24f-sock
 # environment
 VSCODE_CWD = C:\Users\Bart de Vries\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # makefile (from 'Makefile', line 22)
 DELOBJ = $(OBJ)
-# environment
+# en 
+vironment
 SYSTEMROOT = C:\WINDOWS
 # environment
 PROCESSOR_LEVEL = 21
@@ -50,11 +52,13 @@ MAKE_COMMAND := mingw32-make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17372_VOAXJNCUFWOTXXAN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8736_UENMBDVHINJEFUYU
 # environment
 VS160COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\Bart de Vries\OneDrive - Griftland College
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -86,7 +90,7 @@ ONEDRIVE = C:\Users\Bart de Vries\OneDrive - Griftland College
 # makefile (from 'Makefile', line 19)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # makefile
-CURDIR := c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/opdracht1.3
+CURDIR := c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/autoverhuur
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -103,14 +107,14 @@ MFLAGS = -pqrR
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile (from 'main.d', line 1)
-MAKEFILE_LIST := Makefile Opd1.d main.d
+# makefile (from 'wagen.d', line 1)
+MAKEFILE_LIST := Makefile autohuur.d klant.d main.d wagen.d
 # automatic
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 17372
+VSCODE_PID = 8736
 # makefile (from 'Makefile', line 11)
 APPNAME = main
 # automatic
@@ -144,7 +148,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Bart de Vries\AppData\Roaming\local\bin;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bart de Vries\AppData\Local\GitHubDesktop\bin;C:\Users\Bart de Vries\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.2\bin;C:\tools\msys64;C:\Users\Bart de Vries\AppData\Local\gitkraken\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Bart de Vries\AppData\Roaming\local\bin;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bart de Vries\AppData\Local\GitHubDesktop\bin;C:\Users\Bart de Vries\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.2\bin;C:\tools\msys64;C:\Users\Bart de Vries\AppData\Local\gitkraken\bin;C:\msys64\mingw64\bin;
+PATH = C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Bart de Vries\AppData\Roaming\local\bin;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bart de Vries\AppData\Local\GitHubDesktop\bin;C:\Users\Bart de Vries\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.2\bin;C:\tools\msys64;C:\Users\Bart de Vries\AppData\Local\gitkraken\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Bart de Vries\AppData\Roaming\local\bin;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Local\GitHubDesktop\bin;C:\Users\Bart de Vries\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts;C:\Users\Bart de Vries\AppData\Local\Microsoft\WindowsApps;C:\Users\Bart de Vries\AppData\Roaming\cabal\bin;C:\ProgramData\chocolatey\lib\ghc\tools\ghc-8.10.2\bin;C:\tools\msys64;C:\Users\Bart de Vries\AppData\Local\gitkraken\bin;C:\msys64\mingw64\bin;C:\Users\Bart de Vries\AppData\Local\Programs\Microsoft VS Code\bin
 # environment
 COMPUTERNAME = DESKTOP-E7FF1DR
 # default
@@ -244,7 +248,7 @@ CHOCOLATEYTOOLSLOCATION = C:\tools
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=116/1024=11%, Rehash=0, Collisions=13/175=7%
+# Load=118/1024=12%, Rehash=0, Collisions=14/181=8%
 
 # Pattern-specific Variable Values
 
@@ -252,10 +256,10 @@ PROCESSOR_IDENTIFIER = AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD
 
 # Directories
 
-# src (key c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/opdracht1.3/src, mtime 1644416768): 5 files, no impossibilities.
-# . (key c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/opdracht1.3, mtime 1644416662): 9 files, no impossibilities.
+# src (key c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/autoverhuur/src, mtime 1644429658): 7 files, no impossibilities.
+# . (key c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/autoverhuur, mtime 1644434497): 10 files, no impossibilities.
 
-# 14 files, no impossibilities in 2 directories.
+# 17 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -278,14 +282,39 @@ cleandepw:
 #  recipe to execute (from 'Makefile', line 69):
 	$(DEL) $(DEP)
 
-# Not a target:
-src/Opd1.cpp:
+obj/autohuur.o: src/autohuur.cpp src/autohuur.cpp src/include/autohuur.hpp src/include/klant.hpp src/include/wagen.hpp
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 20:52:19
+#  Implicit/static pattern stem: 'autohuur'
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/autohuur.o
+# automatic
+# * := autohuur
+# automatic
+# < := src/autohuur.cpp
+# automatic
+# + := src/autohuur.cpp src/autohuur.cpp src/include/autohuur.hpp src/include/klant.hpp src/include/wagen.hpp
+# automatic
+# % := 
+# automatic
+# ^ := src/autohuur.cpp src/include/autohuur.hpp src/include/klant.hpp src/include/wagen.hpp
+# automatic
+# ? := src/autohuur.cpp src/include/autohuur.hpp src/include/klant.hpp src/include/wagen.hpp
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
+#  recipe to execute (from 'Makefile', line 47):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
 
-obj/main.o: src/main.cpp src/include/Opd1.hpp
+obj/main.o: src/main.cpp src/include/autohuur.hpp src/include/klant.hpp src/include/wagen.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/wagen.o: src/wagen.cpp src/include/wagen.hpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -301,14 +330,21 @@ cleandep:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 14:53:03
+#  Last modified 2022-02-09 18:07:01
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/klant.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-09 20:25:12
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 src/main.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 15:07:26
+#  Last modified 2022-02-09 20:25:12
 #  File has been updated.
 #  Successfully updated.
 
@@ -320,32 +356,33 @@ clean:
 #  recipe to execute (from 'Makefile', line 53):
 	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
 
-obj/Opd1.o: src/Opd1.cpp src/Opd1.cpp src/include/Opd1.hpp
+obj/klant.o: src/klant.cpp src/include/klant.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+autohuur.d: src/autohuur.cpp
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'Opd1'
-#  Last modified 2022-02-09 15:24:22
+#  Implicit/static pattern stem: 'autohuur'
+#  Last modified 2022-02-13 13:32:34
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := obj/Opd1.o
-# automatic
-# * := Opd1
-# automatic
-# < := src/Opd1.cpp
-# automatic
-# + := src/Opd1.cpp src/Opd1.cpp src/include/Opd1.hpp
-# automatic
-# % := 
-# automatic
-# ^ := src/Opd1.cpp src/include/Opd1.hpp
-# automatic
-# ? := src/Opd1.cpp
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/15=13%
-#  recipe to execute (from 'Makefile', line 47):
-	$(CC) $(CXXFLAGS) -o $@ -c $<
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# Not a target:
+src/include/autohuur.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-09 20:25:12
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/autohuur.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-13 13:32:33
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -362,7 +399,14 @@ all: main
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/5=0%
 
-main: obj/Opd1.o obj/main.o
+# Not a target:
+src/include/wagen.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-09 20:31:43
+#  File has been updated.
+#  Successfully updated.
+
+main: obj/autohuur.o obj/klant.o obj/main.o obj/wagen.o
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -372,10 +416,10 @@ main: obj/Opd1.o obj/main.o
 #  recipe to execute (from 'Makefile', line 36):
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
-Opd1.d: src/Opd1.cpp
+wagen.d: src/wagen.cpp
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'Opd1'
-#  Last modified 2022-02-09 20:52:30
+#  Implicit/static pattern stem: 'wagen'
+#  Last modified 2022-02-13 13:32:34
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -385,45 +429,62 @@ cleanw:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has not been upd 
+ated.
 #  recipe to execute (from 'Makefile', line 64):
 	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
 
 main.d: src/main.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main'
-#  Last modified 2022-02-09 20:52:30
+#  Last modified 2022-02-13 13:32:34
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
 	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
 # Not a target:
-src/include/Opd1.hpp:
+src/wagen.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-09 15:13:35
+#  Last modified 2022-02-09 20:25:12
 #  File has been updated.
 #  Successfully updated.
+
+klant.d: src/klant.cpp
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'klant'
+#  Last modified 2022-02-13 13:32:34
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 40):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
 
 .PHONY: clean cleandep cleanw cleandepw
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+src/include/klant.hpp:
+#  Implicit rule search has been done.
+#  Last modified 2022-02-09 20:31:43
+#  File has been updated.
+#  Successfully updated.
+
 # files hash-table stats:
-# Load=17/1024=2%, Rehash=0, Collisions=0/59=0%
+# Load=25/1024=2%, Rehash=0, Collisions=4/87=5%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 30 / storage = 242 B / avg = 8 B
-# current buf: size = 8162 B / used = 242 B / count = 30 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 41 / storage = 401 B / avg = 9 B
+# current buf: size = 8162 B / used = 401 B / count = 41 / avg = 9 B
 
-# strcache performance: lookups = 74 / hit rate = 59%
+# strcache performance: lookups = 101 / hit rate = 59%
 # hash-table stats:
-# Load=30/8192=0%, Rehash=0, Collisions=0/74=0%
-# Finished Make data base on Wed Feb 09 20:52:30 2022
+# Load=41/8192=1%, Rehash=0, Collisions=0/101=0%
+# Finished Make data base on Sun Feb 13 13:32:35 2022
 
  

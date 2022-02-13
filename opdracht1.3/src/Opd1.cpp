@@ -1,6 +1,6 @@
 #include "include/Opd1.hpp"
 
-Opd1::Opd1(){
+Opd1::Opd1()){
     var1 = 0;
 }
 
