@@ -1,0 +1,8 @@
+mingw32-make.exe --dry-run --keep-going --print-directory
+mingw32-make: Entering directory 'd:/HU-jaar2/HU-HPP/opdracht1.3'
+g++ -std=c++17 -Wall -o obj/Opd1.o -c src/Opd1.cpp
+ 
+g++ -std=c++17 -Wall -o obj/main.o -c src/main.cpp
+g++ -std=c++17 -Wall -o main obj/Opd1.o obj/main.o 
+mingw32-make: Leaving directory 'd:/HU-jaar2/HU-HPP/opdracht1.3'
+ 
