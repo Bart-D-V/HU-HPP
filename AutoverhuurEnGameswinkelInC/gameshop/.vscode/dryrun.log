@@ -1,0 +1,10 @@
+mingw32-make: Entering directory 'c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop'
+ 
+g++ -std=c++17 -Wall -o obj/game.o -c src/game.cpp
+ 
+g++ -std=c++17 -Wall -o obj/main.o -c src/main.cpp
+ 
+g++ -std=c++17 -Wall -o obj/persoon.o -c src/persoon.cpp
+g++ -std=c++17 -Wall -o main obj/game.o obj/main.o obj/persoon.o 
+mingw32-make: Leaving directory 'c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop'
+ 
