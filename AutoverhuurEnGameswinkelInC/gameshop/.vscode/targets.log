@@ -6,7 +6,7 @@ mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Feb 15 12:16:14 2022
+# Make data base, printed on Tue Feb 22 11:43:23 2022
 
 # Variables
 
@@ -33,15 +33,14 @@ USERPROFILE = C:\Users\Bart de Vries
 # environment
 LOCALAPPDATA = C:\Users\Bart de Vries\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-45f01130-b1ea-43de-a807-7636e36bda31-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-96757218-2125-48a7-8235-ec2a300fbc27-sock
 # environment
 VSCODE_CWD = C:\Users\Bart de Vries\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # makefile (from 'Makefile', line 22)
 DELOBJ = $(OBJ)
-# en 
-vironment
+# environment
 SYSTEMROOT = C:\WINDOWS
 # environment
 PROCESSOR_LEVEL = 21
@@ -52,11 +51,12 @@ MAKE_COMMAND := mingw32-make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22636_MNQHLGGIQBCULERB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18100_LKKHXXBODUVTELKM
 # environment
 VS160COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\
 # environment
-ONEDRIVECOMMERCIAL = C:\Users\Bart de Vries\OneDrive - Griftland College
+ONEDRIVE 
+COMMERCIAL = C:\Users\Bart de Vries\OneDrive - Griftland College
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -90,7 +90,7 @@ ONEDRIVE = C:\Users\Bart de Vries\OneDrive - Griftland College
 # makefile (from 'Makefile', line 19)
 DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
 # makefile
-CURDIR := c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop
+CURDIR := d:/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -114,7 +114,7 @@ MAKEFILE_LIST := Makefile game.d main.d persoon.d
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 22636
+VSCODE_PID = 18100
 # makefile (from 'Makefile', line 11)
 APPNAME = main
 # automatic
@@ -256,8 +256,8 @@ PROCESSOR_IDENTIFIER = AMD64 Family 21 Model 2 Stepping 0, AuthenticAMD
 
 # Directories
 
-# src (key c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop/src, mtime 1644843490): 6 files, no impossibilities.
-# . (key c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop, mtime 1644923771): 9 files, no impossibilities.
+# src (key d:/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop/src, mtime 1644923942): 6 files, no impossibilities.
+# . (key d:/HU-jaar2/HU-HPP/AutoverhuurEnGameswinkelInC/gameshop, mtime 1644923942): 9 files, no impossibilities.
 
 # 15 files, no impossibilities in 2 directories.
 
@@ -277,7 +277,7 @@ obj/%.o: src/%.cpp
 persoon.d: src/persoon.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'persoon'
-#  Last modified 2022-02-15 12:16:11
+#  Last modified 2022-02-22 11:43:22
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -294,7 +294,7 @@ cleandepw:
 game.d: src/game.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'game'
-#  Last modified 2022-02-15 12:16:12
+#  Last modified 2022-02-22 11:43:23
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -423,7 +423,7 @@ src/game.cpp:
 main.d: src/main.cpp
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'main'
-#  Last modified 2022-02-15 12:16:11
+#  Last modified 2022-02-22 11:43:23
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 40):
@@ -455,6 +455,6 @@ src/include/game.hpp:
 # strcache performance: lookups = 87 / hit rate = 59%
 # hash-table stats:
 # Load=35/8192=0%, Rehash=0, Collisions=0/87=0%
-# Finished Make data base on Tue Feb 15 12:16:14 2022
+# Finished Make data base on Tue Feb 22 11:43:23 2022
 
  
