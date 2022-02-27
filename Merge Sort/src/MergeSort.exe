@@ -122394,91 +122394,93 @@ namespace __variant
 
 
 # 6 "C:\\Users\\Bart de Vries\\Documents\\HU-jaar2\\HU-HPP\\Merge Sort\\src\\MergeSort.cpp"
-using std::vector, std::cout, std::endl;
+using std::vector;
 
-void merge(int *data, int left, int middle, int right)
+
+void merge(vector<int> data, int left, int middle, int right)
 {
-int size_left, size_right;
+    std::cout << "poep" << std::endl;
+    int size_left, size_right;
 
+    size_left = middle-left+1; size_right = right-middle;
+    vector<int> lvec(size_left), rvec(size_right);
 
-size_left = middle-left+1; size_right = right-middle;
-int lvec[size_left], rvec[size_right];
+    for(int i = 0; i<size_left; i++) {
+        lvec[i] = data[left+i];
+    }
+    for(int j = 0; j<size_right; j++){
+        rvec[j] = data[middle+1+j];
+    }
 
+    int i = 0; int j = 0; int k = left;
 
-for(int i = 0; i<size_left; i++) {
-    lvec[i] = data[left+i];
-}
-for(int j = 0; j<size_right; j++){
-    rvec[j] = data[middle+1+j];
-}
+    while(i < size_left && j<size_right) {
+        if(lvec[i] <= rvec[j]) {
+            data[k] = lvec[i];
+            i++;
+        }else{
+            data[k] = rvec[j];
+            j++;
+        }
+        k++;
+    }
 
-int i = 0; int j = 0; int k = left;
-
-
-while(i < size_left && j<size_right) {
-    if(lvec[i] <= rvec[j]) {
+    while(i < size_left) {
         data[k] = lvec[i];
-        i++;
-    }else{
+        i++; k++;
+    }
+    while(j < size_right) {
         data[k] = rvec[j];
-        j++;
-    }
-    k++;
-}
-
-while(i < size_left) {
-    data[k] = lvec[i];
-    i++; k++;
-}
-while(j < size_right) {
-    data[k] = rvec[j];
-    j++; k++;
-   }
-}
-
-void merge_sort2(int *data, int low, int high)
-
-{
-
-    if (high - low >= 1) {
-        int middle = floor(low + high) / 2;
-
-        merge_sort2(data, low, middle);
-        merge_sort2(data, middle++, high);
-
-        merge(data, low, middle, high);
+        j++; k++;
     }
 }
 
-void merge_sort(int *data)
+void merge_sort2(vector<int> data, int low, int high)
 {
-    merge_sort2(data, 0, 50 - 1);
+
+    if(low >= high)
+        std::cout << low << " " << high << std::endl;
+        return;
+
+    int middle = low+(high-low)/2;
+    merge_sort2(data, low, middle);
+    merge_sort2(data, middle++, high);
+
+    merge(data, low, middle, high);
+
+}
+
+void merge_sort(vector<int> data)
+{
+    merge_sort2(data, 0, data.size() - 1);
 }
 
 void print(std::vector <int> const &a) {
-    std::cout << "The vector elements are : ";
+   std::cout << "The vector elements are : ";
 
-    for(int i=0; i < a.size(); i++) {
-        std::cout << a.at(i) << ' ';
-    }
+   for(int i=0; i < a.size(); i++)
+   std::cout << a.at(i) << ' ';
 }
-
-void display(int *array, int size) {
-   for(int i = 0; i<size; i++)
-      cout << array[i] << " ";
-   cout << endl;
-}
-
 
 int main()
 {
-   int V[50];
-   for(int i=0;i<50;i++)
-      V[i]=rand()%100;
 
-    merge_sort(V);
-    display(V, 50);
+    int size = 15;
 
 
 
+    vector<int> V(size, 0);
+
+
+    srand(time(0));
+
+
+
+    generate(V.begin(), V.end(), rand);
+
+    print(V);
+
+    merge_sort2(V, 0, V.size() - 1);
+
+    print(V);
 }

@@ -1,61 +1,55 @@
 #include <iostream>
-#include <vector>
 #include <cmath>
 
 
-using std::vector;
-
-
-void merge(vector<int> data, int left, int middle, int right)
+void merge(int data[], int const low, int const middle, int const high)
 {
-    int size_left, size_right;
-
-    size_left = middle-left+1; size_right = right-middle;
-    vector<int> lvec(size_left), rvec(size_right);
-
-    for(int i = 0; i<size_left; i++) {
-        lvec[i] = data[left+i];
-    }
-    for(int j = 0; j<size_right; j++){
-        rvec[j] = data[middle+1+j];
-    }
-
-    int i = 0; int j = 0; int k = left;
-
-    while(i < size_left && j<size_right) {
-        if(lvec[i] <= rvec[j]) {
-            data[k] = lvec[i];
+    // get sizes of left and right array
+    int const left_size = middle - low + 1;
+    int const right_size = high - middle;
+    // make sub arrays left and right of middle
+    int *left_arr = new int[left_size], *right_arr = new int[right_size];
+    // fill sub-arrays
+    for (int i = 0; i < left_size; i++)
+        left_arr[i] = data[low + i];
+    for (int j = 0; j < right_size; j++)
+        right_arr[j] = data[middle + 1 + j];
+  
+    int i = 0, j = 0; 
+    int k = low;
+  
+    while (i < left_size && j < right_size) { // merge arrays
+        if (left_arr[i] <= right_arr[j]) {
+            data[k] = left_arr[i];
             i++;
-        }else{
-            data[k] = rvec[j];
+        }
+        else {
+            data[k] = right_arr[j];
             j++;
         }
         k++;
     }
-
-    while(i < size_left) {
-        data[k] = lvec[i];
-        i++; k++;
+    while (i < left_size) { // add left over elements of left array
+        data[k] = left_arr[i];
+        i++;
+        k++;
     }
-    while(j < size_right) {
-        data[k] = rvec[j];
-        j++; k++;
-    }
-}
-
-void merge_sort2(vector<int> data, int low, int high)
-{
-    if (high - low >= 1) {
-        int middle = floor(high + low) / 2;
-
-        merge_sort2(data, low, middle);        
-        merge_sort2(data, middle++, high);
-        
-        merge(data, low, middle, high);
+    while (j < right_size) { // add left over elements of right array
+        data[k] = right_arr[j];
+        j++;
+        k++;
     }
 }
-
-void merge_sort(vector<int> data)
+  
+void merge_sort(int data[], int const low, int const high)
 {
-    merge_sort2(data, 0, data.size() - 1);
+    if (low >= high)
+        return;
+  
+    int middle = floor(high + low) / 2;
+
+    merge_sort(data, low, middle);
+    merge_sort(data, middle + 1, high);
+
+    merge(data, low, middle, high);
 }

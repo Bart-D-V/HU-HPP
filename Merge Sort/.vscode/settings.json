@@ -86,5 +86,12 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "c:\\Users\\Bart de Vries\\Documents\\HU-jaar2\\HU-HPP\\Merge Sort",
+            "binaryPath": "c:\\Users\\Bart de Vries\\Documents\\HU-jaar2\\HU-HPP\\Merge Sort\\MergeSort",
+            "binaryArgs": []
+        }
+    ]
 }

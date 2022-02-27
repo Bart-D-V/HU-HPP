@@ -1,0 +1,7 @@
+mingw32-make.exe --dry-run --always-make --keep-going --print-directory
+mingw32-make: Entering directory 'c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/Merge Sort'
+ 
+g++ -std=c++17 -Wall -o obj/MergeSort.o -c src/MergeSort.cpp
+g++ -std=c++17 -Wall -o MergeSort obj/MergeSort.o 
+mingw32-make: Leaving directory 'c:/Users/Bart de Vries/Documents/HU-jaar2/HU-HPP/Merge Sort'
+ 
