@@ -1,5 +1,0 @@
-mingw32-make.exe --dry-run --keep-going --print-directory
-mingw32-make: Entering directory 'd:/HU-jaar2/HU-HPP/ZwembadDemo'
-g++ -std=c++17 -Wall -o zwembaddemo obj/zwembad.o obj/zwembaddemo.o 
-mingw32-make: Leaving directory 'd:/HU-jaar2/HU-HPP/ZwembadDemo'
- 
