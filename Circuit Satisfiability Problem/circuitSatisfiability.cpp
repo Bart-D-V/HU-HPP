@@ -32,7 +32,8 @@ int checkCircuit(int, bool *);
 
 int main (int argc, char *argv[])
 {
-   unsigned int i, combination; // loop variable (32 bits)
+   unsigned long combination; // loop variable (32 bits)
+   unsigned int i; // loop variable (32 bits)
    int id = -1, numProcesses = -1, count = 0;  // process id
    double startTime, totalTime; // to measure the amount of time 
 
@@ -45,7 +46,6 @@ int main (int argc, char *argv[])
 
    cout << endl << "Process " << id+1 << " of " << numProcesses << " is checking the circuit..." << endl;
 
-
    for (combination = id; combination < UINT_MAX; combination += numProcesses)
    {
       for (i = 0; i < SIZE; i++)
@@ -54,11 +54,11 @@ int main (int argc, char *argv[])
       count += checkCircuit(id, v);
    }
 
+   totalTime = MPI_Wtime() - startTime; // calculates the totaltime
+   cout << "Process " << id+1 << " finished in " << totalTime << " seconds." << endl;
+
    int total_count = 0; // the sum of all the counts
    MPI_Reduce(&count, &total_count, 1, MPI_INT, MPI_SUM, 0, MPI_COMM_WORLD); // adds all the counts together
-
-   totalTime = MPI_Wtime() - startTime; // calculates the totaltime
-   cout << "Process " << id << " finished in " << totalTime << " seconds." << endl;
 
    if(id == 0)
    {
@@ -66,7 +66,6 @@ int main (int argc, char *argv[])
    }
 
    MPI_Finalize();
-
    return 0;
 }
 
@@ -99,7 +98,7 @@ int checkCircuit(int id, bool *v)
        && (v[28] || v[29]) && (v[29] || !v[30])
        && (v[30] || v[31]) ) )
    {
-      std::printf("%d) %d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d \n", id,
+      std::printf("%d) %d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d \n", id+1,
              v[31], v[30], v[29], v[28], v[27], v[26], v[25], v[24], v[23], v[22],
              v[21], v[20], v[19], v[18], v[17], v[16], v[15], v[14], v[13], v[12],
              v[11], v[10], v[9], v[8], v[7], v[6], v[5], v[4], v[3], v[2], v[1], v[0]);
